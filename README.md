@@ -1,24 +1,17 @@
 # HW1 — Screenshot Task
 
-This is the first homework assignment.
-
 ## Description
 
-This task contains a screenshot of the completed work.
+This homework contains a screenshot of the completed task.
 
 ## Contents
 
-- Screenshot image of the task result
+- Screenshot image
 
 ## How to view
 
-1. Open the repository
-2. Go to branch `hw1`
-3. Open the image file (screenshot)
-
-## Notes
-
-This homework is a simple visual proof of task completion.
+1. Switch to branch `hw1`
+2. Open the image file
 
 ## Author
 
