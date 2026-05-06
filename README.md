@@ -1,24 +1,19 @@
-# Frontend Homeworks
+# HW2 — Website Project
 
-This repository contains my homework projects.
+## Description
 
-## Structure
+This homework is a website project built with HTML and CSS.
 
-- main — base branch
-- hw1 — screenshot task
-- hw2 — website project
-- hw3 — forms practice
+## Contents
 
-## HW2 — Website Project
-
-This is a simple website built with HTML and CSS.
-
-### Features
-- Page layout using HTML
-- Styling with CSS
-- Images and basic structure
+- index.html
+- css/
+- images/
 
 ## How to run
 
-1. Open the project folder
-2. Find the file:
+1. Switch to branch `hw2`
+2. Open `index.html` in a browser
+
+## Author
+Iliyua
