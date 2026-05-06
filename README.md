@@ -1,28 +1,22 @@
 # Frontend Homeworks
 
-This repository contains all my frontend homework assignments.
+This repository contains my frontend homework assignments.
 
-## Repository structure
+## Structure
 
-Each homework is stored in a separate branch:
-
-- main — base branch (this file)
+- main — base branch
 - hw1 — screenshot task
-- hw2 — website project (HTML + CSS)
-- hw3 — forms practice (HTML forms + images)
+- hw2 — website project
+- hw3 — forms practice
 
-## How to view projects
+## How to view
 
-1. Switch to the required branch:
+1. Open the repository
+2. Switch to the required branch:
    - hw1
    - hw2
    - hw3
-
-2. Open project files in the browser (index.html if available)
-
-## Notes
-
-Each homework is developed and stored separately in its own branch.
+3. Open project files (index.html if available)
 
 ## Author
 
