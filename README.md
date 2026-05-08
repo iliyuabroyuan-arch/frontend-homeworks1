@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Frontend Homeworks
 
 This repository contains my frontend homework assignments.
@@ -33,7 +32,7 @@ This homework contains a screenshot of the completed task.
 
 1. Switch to branch `hw1`
 2. Open the image file
->>>>>>> hw1
+
 
 ## Author
 
