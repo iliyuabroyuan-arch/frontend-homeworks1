@@ -1,119 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
 
-<style>
-* {
-    box-sizing: border-box;
-}
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset.css">
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f6f6f6;
-}
+    <!-- Normalize CSS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-.modal {
-    width: 500px;
-    margin: 80px auto;
-    background: #fff;
-    border-radius: 10px;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.form-inner {
-    width: 300px;
-    margin: 0 auto;
-}
-
-input {
-    width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-}
-
-/* password eye */
-.password-box {
-    position: relative;
-}
-
-.password-box input {
-    padding-right: 35px;
-}
-
-.eye {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    opacity: 0.8;
-}
-
-.main-btn {
-    width: 100%;
-    height: 45px;
-    background: #46A358;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-}
-</style>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-<div class="modal">
+    <div class="modal">
 
-<div class="form-inner">
+        <div class="tabs">
+            <span>Login</span>
+            <span class="active">Register</span>
+        </div>
 
-<form>
+        <p class="description">
+            Enter your email and password to register.
+        </p>
 
-<input type="text" placeholder="Username">
-<input type="email" placeholder="Email">
+        <form class="register-form">
 
-<div class="password-box">
-    <input type="password" placeholder="Password">
-    <img src="images/eye-off.png" class="eye" onclick="toggle(this)">
-</div>
+            <input type="text" placeholder="Username">
 
-<div class="password-box">
-    <input type="password" placeholder="Confirm Password">
-    <img src="images/eye-off.png" class="eye" onclick="toggle(this)">
-</div>
+            <input type="email" placeholder="Enter your email address">
 
-<button class="main-btn">Register</button>
+            <input type="password" placeholder="Password">
 
-</form>
+            <input type="password" placeholder="Confirm Password">
 
-</div>
+            <button type="submit" class="register-btn">
+                Register
+            </button>
 
-</div>
+        </form>
 
-<script>
-function toggle(icon) {
-    const input = icon.parentElement.querySelector("input");
+        <div class="divider">
+            <span>Or register with</span>
+        </div>
 
-    if (input.type === "password") {
-        input.type = "text";
-        icon.src = "images/eye.png";
-    } else {
-        input.type = "password";
-        icon.src = "images/eye-off.png";
-    }
-}
-</script>
+        <div class="social-buttons">
+
+            <button class="social-btn">
+                <img src="images/google.png" alt="Google">
+                Continue with Google
+            </button>
+
+            <button class="social-btn">
+                <img src="images/facebook.png" alt="Facebook">
+                Continue with Facebook
+            </button>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
