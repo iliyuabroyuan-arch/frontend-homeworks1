@@ -1,39 +1,24 @@
 # Frontend Homeworks
 
-This repository contains my frontend homework assignments.
-
-## Structure
-
-- main — base branch
-- hw1 — screenshot task
-- hw2 — website project
-- hw3 — forms practice
-
-## How to view
-
-1. Open the repository
-2. Switch to the required branch:
-   - hw1
-   - hw2
-   - hw3
-3. Open project files (index.html if available)
-=======
-# HW1 — Screenshot Task
-
 ## Description
+This repository contains completed HTML and CSS homework assignments.
 
-This homework contains a screenshot of the completed task.
+## Project Structure
+- `index.html` — main page
+- `styles/` — folder with CSS styles
+- `images/` — folder with images
 
-## Contents
+## Demo (GitHub Pages)
+Live version of the project:  
+https://iliyuabroyuan-arch.github.io/frontend-homeworks1/
 
-- Screenshot image
+## GitHub Source
+Source code of the project:  
+https://github.com/iliyuabroyuan-arch/frontend-homeworks
 
-## How to view
-
-1. Switch to branch `hw1`
-2. Open the image file
-
+## Technologies
+- HTML5
+- CSS3
 
 ## Author
-
-Iliyua
+Iliyua Broyuan
