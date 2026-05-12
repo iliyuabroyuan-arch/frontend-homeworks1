@@ -140,8 +140,8 @@ body {
 
 .p-small { 
     width: 120px;
-    margin-bottom: 23px; /* Выравнивание по высоте */
-    margin-right: -60px; /* Двигает большой горшок вплотную к маленькому */
+    margin-bottom: 23px;
+    margin-right: -60px; 
     position: relative;
     z-index: 2;
 }
