@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff2') format('woff2');
+    font-weight: 900;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,20 +23,16 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
-    color: #3D3D3D;
+    font-family: 'Cera Pro', sans-serif;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 60px;
 }
 
 .header {
     border-bottom: 1px solid #e8e8e8;
-    padding: 10px 0;
 }
 
 .header-inner {
@@ -30,7 +44,6 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
 
 .nav {
@@ -44,6 +57,7 @@ body {
     font-size: 16px;
     border-bottom: 3px solid transparent;
     padding-bottom: 5px;
+    display: inline-block;
 }
 
 .nav-link.active {
@@ -57,33 +71,31 @@ body {
 }
 
 .login-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
     background: #46A358;
     color: #fff;
+    text-decoration: none;
     padding: 8px 20px;
     border-radius: 6px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 .hero {
     background: rgba(245, 245, 245, 0.5);
-    padding: 40px 0;
 }
 
 .hero-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    background: rgba(245, 245, 245, 0.5);
+    padding: 38px 60px 0;
+    margin-top: 12px;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 620px;
+    width: 55%;
 }
 
 .hero-subtitle {
@@ -100,6 +112,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
     width: 620px;
+    color: #3D3D3D;
 }
 
 .highlight {
@@ -133,16 +146,14 @@ body {
 }
 
 .p-big {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 507px;
 }
 
 .p-small {
     position: absolute;
-    bottom: 30px;
-    left: 40px;
-    width: 120px;
+    width: 150px;
+    bottom: 32px;
+    left: 50px;
 }
 
 .modal {
