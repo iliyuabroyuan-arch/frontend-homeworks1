@@ -316,7 +316,7 @@ input {
 
 .shop-content {
     vertical-align: top;
-    
+    margin-top: 60px;
 }
 
 .shop-header {
@@ -393,6 +393,7 @@ input {
     justify-content: end;
     gap: 10px;
     list-style: none;
+    margin-top: 60px;
 }
 .pagination button {
     border: 1px solid #E5E5E5;
@@ -434,7 +435,7 @@ input {
     gap: 4px;
 }
 .blog-section {
-    padding: 200px 0 200px;
+    padding: 120px 0 100px;
 }
 
 .blog-section .container {
