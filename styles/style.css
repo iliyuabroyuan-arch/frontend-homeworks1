@@ -570,3 +570,58 @@ input {
     align-items: center;
     gap: 35px;
 }
+
+.product-actions {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+}
+
+.product-card:hover .product-actions {
+    opacity: 1;
+}
+
+.product-actions button {
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.product-actions button img {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    object-fit: contain;
+    display: block;
+}
+
+.product-image {
+    position: relative;
+    background: #FBFBFB;
+}
+.product-image > img {
+    width: 242px;
+    object-fit: contain;
+    display: block;
+    padding: 31px 4px 45px;
+    max-height: 242px;
+    max-width: 280px;
+}
+.product-card p span {
+    color: #A5A5A5;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-left: 10px;
+}
