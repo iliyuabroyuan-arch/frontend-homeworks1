@@ -434,13 +434,14 @@ input {
     gap: 4px;
 }
 .blog-section {
-    padding: 70px 0;
+    padding: 70px 0 70px;
 }
 
 .blog-section .container {
     display: flex;
     flex-direction: column;
     gap: 138px;
+    padding: 0;
 }
 
 .promo-list {
@@ -449,17 +450,18 @@ input {
 }
 .promo-card {
     flex: 1;
-
+    position: relative;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
-
-    padding: 20px 25px;
-
+    padding: 37px 25px 37px 250px;
     background: #FBFBFB;
 }
 
 .promo-card img {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
     max-width: 45%;
 }
 
@@ -467,9 +469,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     gap: 15px;
-
     text-align: right;
 }
 
@@ -569,7 +569,3 @@ input {
     align-items: center;
     gap: 35px;
 }
-
-
-    
-
