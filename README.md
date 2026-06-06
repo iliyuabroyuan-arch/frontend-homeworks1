@@ -1,4 +1,4 @@
-# Homework 5
+# Homework 6
 
 Simple webpage created for Frontend Homework 4 using HTML and CSS.
 
