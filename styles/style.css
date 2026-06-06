@@ -623,3 +623,57 @@ input {
     font-weight: 400;
     margin-left: 10px;
 }
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: #EDF6EE;
+    list-style: none;
+    z-index: 20;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item:hover > a {
+    background: #1A712A;
+    color: #fff;
+    font-weight: 700;
+}
+
+.submenu {
+    position: absolute;
+    top: -118px;
+    left: 100%;
+    display: none;
+    background: #EDF6EE;
+    list-style: none;
+}
+.dropdown-item:hover .submenu {
+    display: block;
+}
+.nav-item:hover .nav-link {
+    border-bottom-color: #46A358;
+    font-weight: 700;
+}
