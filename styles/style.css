@@ -603,11 +603,16 @@ input {
     padding: 0;
     object-fit: contain;
     display: block;
+    filter: brightness(0);
+}
+.product-actions button:hover img {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(70%) saturate(500%) hue-rotate(80deg);
 }
 
 .product-image {
     position: relative;
     background: #FBFBFB;
+    border-top: 1px solid transparent;
 }
 .product-image > img {
     width: 242px;
@@ -616,6 +621,9 @@ input {
     padding: 31px 4px 45px;
     max-height: 242px;
     max-width: 280px;
+}
+.product-card:hover .product-image {
+    border-top-color: #46A358;
 }
 .product-card p span {
     color: #A5A5A5;
