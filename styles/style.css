@@ -718,19 +718,19 @@ input {
 
 .footer-features {
     display: flex;
+     gap: 30px;
     padding: 25px;
+
 }
 
 .feature-card {
     flex: 1;
-    padding-right: 30px;
     border-right: 1px solid #E5E5E5;
 }
 
-.feature-card + .feature-card {
-    padding-left: 30px;
+.feature-card:last-of-type {
+    border-right: none;
 }
-
 
 .feature-card h3,
 .newsletter h3,
@@ -750,7 +750,6 @@ input {
 
 .newsletter {
     flex: 1.4;
-    padding-left: 30px;
 }
 
 .newsletter-form {
