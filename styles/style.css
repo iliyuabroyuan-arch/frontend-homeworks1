@@ -71,16 +71,15 @@ input {
     border-bottom: 3px solid transparent;
     padding-bottom: 25px;
     display: inline-block;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #46A358;
 }
 
 .nav-link.active {
     border-bottom-color: #46A358;
     font-weight: 700;
-}
-
-.header-actions {
-    display: flex;
-    gap: 15px;
 }
 
 .login-btn {
@@ -92,6 +91,10 @@ input {
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 6px;
+    transition: 0.3s;
+}
+.login-btn:hover {
+    opacity: 0.8;
 }
 
 .hero {
@@ -145,14 +148,18 @@ input {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
+    transition: 0.3s;
 }
+.shop-now-btn:hover {
+    opacity: 0.8;
+}
+
 .hero-image {
     position: relative;
 }
 
 .p-big {
     width: 507px;
-    /*height: 450px;*/
 }
 
 .p-small {
@@ -270,10 +277,14 @@ input {
 
 .categories {
     background: #FBFBFB;
+    margin-top: 52px;
 }
 
 .categories-inner {
-    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 18px;
 }
 
 .categories h3 {
@@ -285,18 +296,19 @@ input {
 }
 
 .categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     list-style: none;
-    padding-left: 0 12px;
-    margin-bottom: 320px;
 }
 
-
 .categories-list a {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
-    line-height: 40px;
     color: #3D3D3D;
 }
 
@@ -333,6 +345,11 @@ input {
     font-size: 15px;
     color: #3D3D3D;
     text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.shop-tabs a:hover {
+    transform: scale(1.03);
 }
 
 .shop-tabs a.active {
@@ -367,7 +384,7 @@ input {
 }
 
 .product-image img {
-    Width: 242px;
+    width: 242px;
     object-fit: contain;
     display: block;
     padding: 31px 4px 19px;
@@ -488,13 +505,15 @@ input {
 
 .promo-btn {
     padding: 10px 27px;
-
     background: #46A358;
     border-radius: 6px;
-
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+    transition: 0.3s;
+}
+.promo-btn:hover {
+    opacity: 0.8;
 }
 
 .blog-header {
@@ -595,6 +614,10 @@ input {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 0.3s;
+}
+.product-actions button:hover {
+    transform: scale(1.1);
 }
 
 .product-actions button img {
@@ -708,14 +731,6 @@ input {
     padding-left: 30px;
 }
 
-.feature-icon {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.feature-icon img {
-    max-width: 74px;
-}
 
 .feature-card h3,
 .newsletter h3,
@@ -757,6 +772,10 @@ input {
     padding: 12px 25px;
     font-weight: 700;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.newsletter-form button:hover {
+    transform: scale(1.05);
 }
 
 .footer-contacts {
@@ -839,26 +858,7 @@ input {
     font-size: 14px;
     color: #3D3D3D;
 }
-.feature-icon {
-    position: relative;
-    min-height: 75px;
-    margin-bottom: 15px;
-}
 
-.feature-icon img {
-    position: absolute;
-    max-width: 74px;
-}
-
-.feature-icon {
-    position: relative;
-    min-height: 90px;
-    margin-bottom: 15px;
-}
-
-.feature-icon img {
-    position: absolute;
-}
 
 .feature-icon {
     position: relative;
@@ -917,4 +917,210 @@ input {
 }
 .footer-contact p span {
     display: block;
+}
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-icon-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header-icon-btn img {
+    display: block;
+}
+
+.cart-header-btn span {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background: #46A358;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.price-range h3,
+.size-filter h3 {
+    font-size: 18px;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+}
+
+.categories-list a.active {
+    color: #46A358;
+    font-weight: 700;
+}
+
+.price-range {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.range-line {
+    position: relative;
+    height: 4px;
+    background: #D9EEDD;
+}
+
+.range-line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 4px;
+    background: #46A358;
+}
+
+.range-line span {
+    position: absolute;
+    top: -6px;
+    background: #46A358;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.range-line span:first-child {
+    left: 0;
+}
+
+.range-line span:last-child {
+    left: 70%;
+}
+
+.price-range p {
+    font-size: 15px;
+    color: #3D3D3D;
+}
+
+.price-range strong {
+    color: #46A358;
+}
+
+.filter-btn {
+    align-self: flex-start;
+    border: none;
+    background: #46A358;
+    color: #fff;
+    border-radius: 6px;
+    padding: 9px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.filter-btn:hover {
+    opacity: 0.8;
+}
+
+.size-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.size-filter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+
+.size-filter li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #3D3D3D;
+}
+.categories h3,
+.price-range h3,
+.size-filter h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3D3D3D;
+}
+
+.sale-label {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    background: #46A358;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 9px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.shop-tabs a,
+.categories-list a,
+.size-filter li {
+    transition: 0.3s;
+}
+
+.shop-tabs a:hover,
+.categories-list a:hover,
+.size-filter li:hover {
+    color: #46A358;
+}
+.shop-tabs a,
+.categories-list a {
+    transition: color 0.3s;
+}
+
+.header-icon-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.header-icon-btn img {
+    transition: 0.3s;
+}
+.header-icon-btn:hover img {
+    transform: scale(1.1);
+}
+.login-btn,
+.shop-now-btn,
+.filter-btn,
+.promo-btn {
+    transition: transform 0.3s ease;
+}
+
+.login-btn:hover,
+.shop-now-btn:hover,
+.filter-btn:hover,
+.promo-btn:hover {
+    transform: scale(1.05);
+}
+.nav-link {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+}
+.categories-list a {
+    transition: transform 0.3s ease;
+}
+
+.categories-list a:hover {
+    transform: scale(1.03);
 }
