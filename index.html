@@ -173,7 +173,7 @@
                     </button>
 
                 </div>
-                <a href="registration.html" class="login-btn">
+                <a class="login-btn" id="loginBtn" href="registration.html">
                     <img src="images/login-icon.png" class="login-icon" alt="Login">
                     Login
                 </a>
@@ -303,18 +303,30 @@
 
     <ul>
         <li>
-            <span>Small</span>
-            <span>(119)</span>
+            <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkbox-box"></span>
+                <span>Small</span>
+                <span>(119)</span>
+            </label>
         </li>
 
         <li>
-            <span>Medium</span>
-            <span>(86)</span>
+            <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkbox-box"></span>
+                <span>Medium</span>
+                <span>(86)</span>
+            </label>
         </li>
 
         <li>
-            <span>Large</span>
-            <span>(78)</span>
+            <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkbox-box"></span>
+                <span>Large</span>
+                <span>(78)</span>
+            </label>
         </li>
     </ul>
 
@@ -967,5 +979,33 @@
     </p>
 </section>
 </div>
+<div class="page-loader">
+    <div class="plant-loader">
+        <div class="loader-circle"></div>
+        <div class="loader-leaf"></div>
+    </div>
+
+    <h2>GreenShop</h2>
+
+    <div class="loader-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<script>
+const loginBtn = document.getElementById("loginBtn");
+const loader = document.querySelector(".page-loader");
+
+loginBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    loader.classList.add("show");
+
+    setTimeout(function () {
+        window.location.href = "registration.html";
+    }, 1000);
+});
+</script>
 </body>
 </html>
