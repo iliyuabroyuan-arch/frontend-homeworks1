@@ -932,7 +932,8 @@ input {
     cursor: pointer;
 }
 
-.header-icon-btn img {
+.header-icon-btn img,
+.header-icon-btn .icon {
     display: block;
 }
 
@@ -1076,10 +1077,19 @@ input {
 }
 
 .shop-tabs a:hover,
-.categories-list a:hover,
-.size-filter li:hover {
+.categories-list a:hover {
     color: #46A358;
 }
+
+.size-filter li {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.size-filter li:hover {
+    color: #46A358;
+    transform: translateX(4px);
+}
+
 .shop-tabs a,
 .categories-list a {
     transition: color 0.3s;
@@ -1092,10 +1102,12 @@ input {
     cursor: pointer;
     transition: 0.3s;
 }
-.header-icon-btn img {
+.header-icon-btn img,
+.header-icon-btn .icon {
     transition: 0.3s;
 }
-.header-icon-btn:hover img {
+.header-icon-btn:hover img,
+.header-icon-btn:hover .icon {
     transform: scale(1.1);
 }
 .login-btn,
@@ -1124,4 +1136,100 @@ input {
 
 .categories-list a:hover {
     transform: scale(1.03);
+}
+
+
+.icon {
+    display: block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.header-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.product-action-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0);
+}
+
+.product-actions button:hover .product-action-icon {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(70%) saturate(500%) hue-rotate(80deg);
+}
+
+.footer-contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.svg-sprite {
+    display: none;
+}
+.footer-contact-icon,
+.sort-arrow {
+    fill: none;
+}
+
+.footer-contact-icon {
+    color: #46A358;
+}
+
+.sort-arrow {
+    color: #3D3D3D;
+}
+.sort-arrow {
+    width: 16px;
+    height: 16px;
+}
+.social-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.social-list a:hover {
+    transform: scale(1.1);
+    border-color: #46A358;
+}
+.social-list a {
+    transition: transform 0.25s ease;
+}
+
+.social-list a:hover {
+    transform: translateY(-3px);
+}
+.pagination button {
+    border: 1px solid #E5E5E5;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 14px;
+    cursor: pointer;
+    color: #3D3D3D;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.pagination button:hover {
+    background: #46A358;
+    color: #fff;
+    border-color: #46A358;
+    transform: scale(1.08);
+}
+
+.pagination .active {
+    background: #46A358;
+    color: #fff;
+    border-color: #46A358;
 }
