@@ -1233,3 +1233,36 @@ input {
     color: #fff;
     border-color: #46A358;
 }
+.svg-sprite {
+    display: none;
+}
+
+.icon {
+    display: block;
+    flex-shrink: 0;
+}
+
+.header-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.product-action-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.footer-contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.sort-arrow {
+    width: 16px;
+    height: 16px;
+}
