@@ -118,6 +118,7 @@ input {
 }
 
 .hero-title {
+    max-width: 620px;
     font-size: 70px;
     font-weight: 900;
     line-height: 70px;
