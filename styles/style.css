@@ -1266,50 +1266,69 @@ input {
     width: 16px;
     height: 16px;
 }
+
 .custom-checkbox {
     display: flex;
     align-items: center;
-    gap: 8px;
     cursor: pointer;
+    gap: 8px;
+    color: #3D3D3D;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .custom-checkbox input {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .checkbox-box {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #46A358;
-    border-radius: 3px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #46A358;
+    border-radius: 5px;
+    background: #fff;
     position: relative;
     flex-shrink: 0;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.3s ease;
 }
 
-.checkbox-box::after {
+.checkbox-box::before {
     content: "";
     position: absolute;
-    left: 4px;
-    top: 1px;
-    padding: 3px 1px 6px 3px;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
     transform: rotate(45deg) scale(0);
-    transition: transform 0.2s ease;
+    transition: transform 0.25s ease;
 }
 
 .custom-checkbox input:checked + .checkbox-box {
     background: #46A358;
+    border-color: #46A358;
+    transform: scale(1.08);
 }
 
-.custom-checkbox input:checked + .checkbox-box::after {
+.custom-checkbox input:checked + .checkbox-box::before {
     transform: rotate(45deg) scale(1);
 }
 
 .custom-checkbox:hover {
     color: #46A358;
     transform: translateX(4px);
+}
+
+.checkbox-name {
+    flex: 1;
+}
+
+.checkbox-count {
+    color: inherit;
 }
 
 
@@ -1430,4 +1449,280 @@ input {
 .page-loader.show {
     opacity: 1;
     visibility: visible;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+@media (max-width: 320px) {
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .logo svg,
+    .logo img {
+        max-width: 130px;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .header-actions {
+        gap: 12px;
+    }
+
+    .header-icons {
+        gap: 15px;
+    }
+
+    .header-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .login-btn {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    .hero {
+        margin-top: 15px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        padding: 25px 0 25px 8px;
+        width: 52%;
+    }
+
+    .hero-subtitle {
+        font-size: 9px;
+        margin-bottom: 6px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+
+    .hero-description {
+        width: 100%;
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 12px;
+    }
+
+    .shop-now-btn {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 48%;
+        display: block;
+    }
+
+    .p-big {
+        width: 170px;
+    }
+    .p-small {
+        width: 45px;
+        left: 0;
+        bottom: 20px;
+    }
+    .shop-section {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .categories {
+        margin-top: 0;
+        border-radius: 6px;
+    }
+
+    .categories-inner {
+        padding: 18px;
+    }
+
+    .categories-list {
+        gap: 14px;
+    }
+
+    .price-range {
+        gap: 14px;
+    }
+
+    .sale-banner {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .sale-banner img {
+        width: 100%;
+    }
+
+    .shop-content {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .sort-by {
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+    }
+
+    .shop-tabs {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .sorting {
+        font-size: 14px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 25px 12px;
+    }
+
+    .product-card {
+        width: calc(50% - 6px);
+    }
+
+    .product-image {
+        display: flex;
+        justify-content: center;
+    }
+    .product-image > img {
+        width: 100%;
+        max-width: 130px;
+        padding: 18px 4px 35px;
+    }
+    .product-card h3 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .product-card p {
+        font-size: 13px;
+    }
+
+    .pagination {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .product-actions {
+        gap: 5px;
+    }
+        .product-actions button {
+        padding: 5px;
+    }
+
+    .product-action-icon {
+        width: 13px;
+        height: 13px;
+    }
+    .shop-section {
+        display: block;
+    }
+
+    .sidebar {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .categories {
+        width: 55%;
+    }
+
+    .sale-banner {
+        width: 45%;
+        margin-top: 0;
+    }
+
+    .sale-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .categories-inner {
+        padding: 12px;
+    }
+
+    .categories-list {
+        gap: 9px;
+    }
+
+    .categories h3,
+    .price-range h3,
+    .size-filter h3 {
+        font-size: 14px;
+    }
+
+    .categories-list a,
+    .price-range p,
+    .size-filter li {
+        font-size: 11px;
+    }
+
+    .price-range,
+    .size-filter {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 7px 14px;
+        font-size: 11px;
+    }
+
+    .shop-content {
+        width: 100%;
+        margin-top: 25px;
+    }
 }
