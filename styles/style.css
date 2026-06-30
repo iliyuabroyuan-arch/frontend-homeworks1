@@ -1271,57 +1271,43 @@ input {
 .custom-checkbox {
     display: flex;
     align-items: center;
+    gap: 10px;
     cursor: pointer;
-    gap: 8px;
     color: #3D3D3D;
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .custom-checkbox input {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
 
-.checkbox-box {
-    width: 18px;
+.checkbox-toggle {
+    width: 34px;
     height: 18px;
-    border: 2px solid #46A358;
-    border-radius: 5px;
-    background: #fff;
+    border-radius: 20px;
+    background: #D9EEDD;
     position: relative;
+    transition: 0.3s;
     flex-shrink: 0;
-    transition: background-color 0.3s ease,
-                border-color 0.3s ease,
-                transform 0.3s ease;
 }
 
-.checkbox-box::before {
+.checkbox-toggle::before {
     content: "";
     position: absolute;
-    left: 5px;
+    width: 14px;
+    height: 14px;
+    left: 2px;
     top: 2px;
-    width: 5px;
-    height: 9px;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    transform: rotate(45deg) scale(0);
-    transition: transform 0.25s ease;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.3s;
 }
 
-.custom-checkbox input:checked + .checkbox-box {
+.custom-checkbox input:checked + .checkbox-toggle {
     background: #46A358;
-    border-color: #46A358;
-    transform: scale(1.08);
 }
 
-.custom-checkbox input:checked + .checkbox-box::before {
-    transform: rotate(45deg) scale(1);
-}
-
-.custom-checkbox:hover {
-    color: #46A358;
-    transform: translateX(4px);
+.custom-checkbox input:checked + .checkbox-toggle::before {
+    transform: translateX(16px);
 }
 
 .checkbox-name {
